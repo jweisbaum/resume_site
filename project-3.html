@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Jon's Head in the Cloud(s)</title>
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Add your CSS files here -->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/prettyPhoto.css">
+	<link rel="stylesheet" href="css/themes/blue.css">
+
+	<!-- Add your Fonts here -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<div class="container">
+
+	<div class="logo"><img src="img/logo.svg" alt="Logo"></div>
+
+	<div class="social">
+		<a href="http://www.linkedin.com/pub/jon-weisbaum/34/621/52" class="icon-linkedin" title="LinkedIn"></a>
+	</div>
+	<!-- Social Icons End -->
+
+	<header>
+		<nav id="nav">
+			<ul class="nav">
+				<li><img src="img/logo.svg" alt="My Logo"></li>
+				<li><a href="index.html" class="icon-user"><span>Profile</span></a></li>
+				<li class="active"><a href="work.html" class="icon-briefcase"><span>Work</span></a></li>
+				<li><a href="resume.html" class="icon-list"><span>Resume</span></a></li>
+				<li><a href="contact.html" class="icon-mail"><span>Contact</span></a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Header End -->
+
+	<section class="content">
+		<article class="s-project">
+			<h2>Two Side Projects</h2>
+            
+			<div class="project-nav">
+				<a href="project-2.html" class="icon-arrow-left-5" title="Previous Project"></a>
+				<a href="work.html" class="icon-layout" title="All Projects"></a>
+				<a href="project-1.html" class="icon-arrow-right-5" title="Next Project"></a>
+			</div>
+
+			<div class="details">
+
+				<div>
+					<h4>Project Description</h4>
+					<p>Using C, I've written a small collection of tools to do simple tasks such as find the GCD of two numbers, solve a system of linear diophantine equations, determine if a number is prime, and find a composite number's prime factorization. This was a fun tool to work with posix threads. 
+                     </p>
+                     <br>
+                     <p>
+                     I wrote the Facebook Parser in Java to parse relational information from html so that it could be used in visual analytics. Facebook provides data downloads to its users in the form of HTML documents and I am very interested in what individuals can learn about themselves from their own data. I decided to write a stand alone API rather than utilize the Facebook graph for three main reasons.
+
+In order to gain relational information from the Facebook graph one would need everyone to install their app and I was more interested in what insights into my own behavior I could gain, so I didn't want to have to depend on my all of my friends allowing my program access to their profiles. Thirdly, I wanted a Java project that would teach me more about modular design so that I could add to it over time. One example of this is being able to use jchart to plot my behavior. Ultimately, I think it would be fun to try to correlate trends to events in a person's calendar.</p>
+				</div>
+
+				<ul>
+					<li>
+						<h4>Client</h4>
+						<p>Personal Promotion Projects</p>
+					</li>
+					<li>
+						<h4>Year</h4>
+						<p>2012</p>
+					</li>
+					<li>
+						<h4>Languages</h4>
+						<p>C and Java</p>
+					</li>
+				</ul>
+			</div>
+<!--
+			<ul class="ro-gallery clearfix">
+				<li><a href="img/work/design/1.jpg" data-rel="prettyPhoto[gallery2]" title="How is the description on that one? How is the description on that one? How is the description on that one? "><img src="img/work/design/1.jpg" alt="This is a pretty long title" /></a></li>
+				<li><a href="img/work/design/2.jpg" data-rel="prettyPhoto[gallery2]" title="Description on a single line."><img src="img/work/design/2.jpg" alt="" /></a></li>
+				<li><a href="http://youtu.be/kh29_SERH0Y?rel=0" data-rel="prettyPhoto[gallery2]" title="YouTube demo"><img src="img/work/design/3.jpg" alt="" /></a></li>
+				<li><a href="img/work/design/4.jpg" data-rel="prettyPhoto[gallery2]"><img src="img/work/design/4.jpg" alt="" /></a></li>
+				<li><a href="img/work/design/5.jpg" data-rel="prettyPhoto[gallery2]"><img src="img/work/design/5.jpg" alt="" /></a></li>
+				<li><a href="img/work/design/6.jpg" data-rel="prettyPhoto[gallery2]"><img src="img/work/design/6.jpg" alt="" /></a></li>
+				<li><a href="http://vimeo.com/7874398&width=700" data-rel="prettyPhoto[gallery2]" title="Vimeo video"><img src="img/work/design/7.jpg" alt="This is my Video description!"/></a></li>
+			</ul>
+            -->
+			<!-- Gallery End -->
+
+		</article>
+
+	</section>
+	<!-- Content End -->
+
+</div>
+<!-- Container End -->
+
+<!-- Add your scripts here -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+
+<script>
+	var navigation = responsiveNav("#nav", {
+		animate: true,        // Boolean: Use CSS3 transitions, true or false
+		transition: 400,      // Integer: Speed of the transition, in milliseconds
+		label: "",            // String: Label for the navigation toggle
+		insert: "before",     // String: Insert the toggle before or after the navigation
+		customToggle: "",     // Selector: Specify the ID of a custom toggle
+		openPos: "relative",  // String: Position of the opened nav, relative or static
+		jsClass: "js",        // String: 'JS enabled' class which is added to <html> el
+		init: function(){},   // Function: Init callback
+		open: function(){},   // Function: Open callback
+		close: function(){}   // Function: Close callback
+	});
+
+    // PrettyPhoto Lightbox Gallery
+	$('.ro-gallery').find('a[data-rel^="prettyPhoto"]').prettyPhoto({});
+
+</script>
+
+</body>
+</html>

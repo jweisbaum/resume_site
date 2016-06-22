@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//iPhone OS 9.3.1//EN
+N:;How Thoughtful;;;
+FN: How Thoughtful   
+ORG:How Thoughtful;
+EMAIL;type=INTERNET;type=WORK;type=pref:contact@howthoughtful.io
+TEL;type=CELL;type=VOICE;type=pref:+1 (410) 204-2273
+item1.URL;type=pref:howthoughtful.io
+item1.X-ABLabel:_$!<HomePage>!$_
+END:VCARD
